@@ -1,0 +1,88 @@
+.yellow-gradient-wrapper {
+  background: radial-gradient(
+    1600px 900px at 50% 15%,
+    #ffe96b 0%,
+    #fff2a8 40%,
+    #fffbe6 65%,
+    #ffffff 90%,
+    #ffffff 100%
+  );
+}
+
+.no-pointer-events {
+  pointer-events: none;
+}
+
+.profile-photo-wrap {
+  width: 320px;
+  height: 320px;
+}
+
+section {
+  scroll-margin-top: 120px;
+}
+
+#top {
+  scroll-margin-top: 120px;
+}
+
+.about-text {
+  max-width: 60ch;
+}
+
+.section-yellow {
+  background-color: #ffe96b;
+}
+
+.timeline-line {
+  left: 12px;
+  width: 2px;
+  background: rgba(255, 233, 107, 0.7);
+}
+
+.timeline-dot {
+  width: 22px;
+  height: 22px;
+  background: #ffe96b;
+  border: 3px solid rgba(0, 0, 0, 0.35);
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-dot-wrap {
+  width: 28px;
+}
+
+.timeline-max-width {
+  max-width: 70ch;
+}
+
+.progress-h10 {
+  height: 10px;
+}
+
+.progress-h8 {
+  height: 8px;
+}
+
+.glow-card {
+  position: relative;
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.glow-card:hover {
+  box-shadow: 0 0 0 2px rgba(255, 233, 107, 0.35),
+    0 0 30px rgba(255, 233, 107, 0.45), 0 0 80px rgba(255, 233, 107, 0.25) !important;
+  transform: translateY(-2px);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
