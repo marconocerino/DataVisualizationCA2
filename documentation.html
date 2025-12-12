@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Documentation Report</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Documentation Report - Data Visualization CA2</h1>
+      <p><strong>Name:</strong> Marco Nocerino</p>
+      <p><strong>Student ID:</strong> X00195027</p>
+      <hr />
+    </header>
+    <section>
+      <h2>Hosting URL</h2>
+      <p>
+        <strong>Live website:</strong>
+        <a
+          href="https://marconocerino.github.io/DataVisualizationCA2/"
+          target="_blank"
+          >Click here</a
+        >
+      </p>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Bootstrap Components Used</h2>
+      <ul>
+        <li>
+          <strong>Navbar</strong> - It's a mobile-friendly navigation, it's
+          fixed at the top of the website.
+          <ul>
+            <li>navbar</li>
+            <li>navbar-expand-md</li>
+            <li>navbar-dark</li>
+            <li>fixed-top</li>
+            <li>navbar-toggler</li>
+            <li>collapse navbar-collapse</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>ScrollSpy</strong> - The ScrollSpy is applied to the body
+          element to highlight the active navigation button as the user scrolls
+          the website.
+          <ul>
+            <li>data-bs-spy="scroll"</li>
+            <li>data-bs-target="#mainNav"</li>
+            <li>data-bs-offset="120"</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Buttons</strong> - I used buttons throughout the project for
+          example for the navigation, opening the contact info modal, for
+          filtering projects, and the LinkedIn and GitHub buttons.
+          <ul>
+            <li>btn</li>
+            <li>btn-lg</li>
+            <li>btn-sm</li>
+            <li>btn-dark</li>
+            <li>btn-warning</li>
+            <li>btn-outline-dark</li>
+            <li>btn-outline-light</li>
+            <li>rounded-pill</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Grid System</strong> - To allow the portfolio to be responsive
+          and mobile friendly, I used grid throughout the project.
+          <ul>
+            <li>container</li>
+            <li>row</li>
+            <li>col-md-*</li>
+            <li>col-lg-*</li>
+            <li>g-4</li>
+            <li>gy-4</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Cards</strong> - I used cards to visually separate content
+          such as projects, education, experience, and skills.
+          <ul>
+            <li>card</li>
+            <li>border-0</li>
+            <li>rounded-5</li>
+            <li>shadow-sm</li>
+            <li>h-100</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Modal</strong> - I used it to display the contact information
+          when the "Get In Touch", "Say Hi" buttons are clicked.
+          <ul>
+            <li>modal</li>
+            <li>fade</li>
+            <li>modal-dialog</li>
+            <li>modal-dialog-centered</li>
+            <li>modal-content</li>
+            <li>modal-header</li>
+            <li>modal-body</li>
+            <li>modal-footer</li>
+            <li>btn-close</li>
+            <li>data-bs-toggle="modal"</li>
+            <li>data-bs-target="#contactModal"</li>
+            <li>data-bs-dismiss="modal"</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Dropdown</strong> - I used dropdowns in the Education section
+          to allow users to switch between different academic years and load the
+          different modules and grades.
+          <ul>
+            <li>dropdown</li>
+            <li>dropdown-toggle</li>
+            <li>dropdown-menu</li>
+            <li>dropdown-menu-end</li>
+            <li>dropdown-item</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Badges</strong> I used badges to display small labels such as
+          project years, technologies, skills, and hobbies.
+          <ul>
+            <li>badge</li>
+            <li>rounded-pill</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Tables</strong> - I used the table in the Education section to
+          display module and grades.
+          <ul>
+            <li>table</li>
+            <li>table-responsive</li>
+            <li>align-middle</li>
+            <li>text-end</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Progress Bars</strong> I used progress bars in the Skills
+          section to show my skill levels visually.
+          <ul>
+            <li>progress</li>
+            <li>progress-bar</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Images</strong> - I used image to display a picture of me in
+          the hero section of the website.
+          <ul>
+            <li>img-fluid</li>
+            <li>w-100</li>
+            <li>h-100</li>
+            <li>object-fit-cover</li>
+            <li>rounded-circle</li>
+            <li>overflow-hidden</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Lists</strong> I used list-unstyled to display information
+          without default list styling.
+          <ul>
+            <li>list-unstyled</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Dynamic / Interactive Features Added</h2>
+      <ul>
+        <li>
+          <strong>Modules and Grade updates in the Education Section</strong>:
+          Selecting a year in the dropdown updates the module grades table
+          dynamically (<code>education.js</code>).
+        </li>
+        <li>
+          <strong>Animations when user is scrolling the website</strong>: The
+          cards in the website have a revealing animation when scrolling
+          (<code>scrollEffect.js</code>).
+        </li>
+        <li>
+          <strong>Contact modal </strong>: Opens from multiple buttons (“Get in
+          Touch”, “Say hi!”, and in the Footer “Get in touch”).
+        </li>
+        <li>
+          <strong>Filters in the Project Section</strong>: The filter buttons
+          (All/Web/Python/Java) show/hide project cards
+          (<code>projectsFilter.js</code>).
+        </li>
+        <li>
+          <strong>Responsive mobile</strong>: On small screens the navbar
+          collapses into a toggler button and expands to show links, the font
+          sizes and layouts are automatically adjusted depending on the screen
+          sizes.
+        </li>
+        <li>
+          <strong>Navigation bar highlighting</strong>: The navbar updates the
+          active button in the navigation bar while scrolling.
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
